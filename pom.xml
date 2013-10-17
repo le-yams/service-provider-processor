@@ -9,7 +9,7 @@
 
     <name>Service Provider Processor</name>
     <description>
-        Allow you to declare java services using annotation instead of files in /META-INF/services/.
+        Allows you to declare java services using annotation instead of files in /META-INF/services/.
     </description>
     <url>http://maven.apache.org</url>
     <build>
