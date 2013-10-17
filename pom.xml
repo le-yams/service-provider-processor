@@ -1,7 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
     <groupId>com.mytdev</groupId>
     <artifactId>service-provider</artifactId>
     <version>1.0.0-SNAPSHOT</version>
@@ -12,6 +16,21 @@
         Allows you to declare java services using annotation instead of files in /META-INF/services/.
     </description>
     <url>http://maven.apache.org</url>
+    
+    <licenses>
+        <license>
+            <name>General Public License 2.0</name>
+            <distribution>repo</distribution>
+            <url>http://www.gnu.org/licenses/gpl-2.0.html</url>
+        </license>
+    </licenses>
+    
+    <scm>
+        <url>https://github.com/le-yams/service-provider-processor</url>
+        <connection>scm:git:https://github.com/le-yams/service-provider-processor.git</connection>
+        <developerConnection>scm:git:https://github.com/le-yams/service-provider-processor.git</developerConnection>
+    </scm>
+    
     <build>
         <plugins>
             <plugin>
